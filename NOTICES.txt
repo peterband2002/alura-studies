@@ -1,0 +1,5 @@
+Comando para rodar no prompt e instalar o sass: npm install --save-dev sass
+A pasta "assets" é criada para colocar arquivos estáticos, por exemplo uma imagem
+Quando trabalho com css modules. Eu tenho que instalá-lo via terminal. Adicionar o plugin no arquivo tsconfig.json. Alterar o nome dos arquivos css, incluindo o module. Ex: style.module.scss. Quando for importar o css para algum componente React, deve-se importar como se fosse um objeto. Ex: import style from './style.module.scss'. E por fim, quando for utilizar as estilizações, deve-se considerar como uma variável JS. Ex: className={style.body}
+
+Caso a classe css de algum elemento tenha hífen (-), para que o css module entenda, deve-se utilizar colchetes + aspas. Ex: className={style.["body-container"]}
